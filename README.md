@@ -2,9 +2,7 @@
 
 Create great box art for [Garlic](https://www.patreon.com/posts/76561333) or [Onion](https://github.com/OnionUI/Onion)
 
-Based on the following guides:  
-[Scraping Onion Artwork](https://github.com/OnionUI/Onion/wiki/Scraping-artwork-for-games)  
-[Retro Game Corps RG35XX starter guide](https://retrogamecorps.com/2023/01/03/anbernic-rg35xx-starter-guide/)  
+
 
 ![GarlicOS_001](https://user-images.githubusercontent.com/57577242/227276625-7772e477-e1f7-4656-9a29-2725ced99c00.png)
 ![GarlicOS_002](https://user-images.githubusercontent.com/57577242/227276635-a965ad3d-6b5f-4edd-8836-38a72345c6d2.png)
@@ -13,4 +11,43 @@ Based on the following guides:
 ![MainUI_002](https://user-images.githubusercontent.com/57577242/227276660-2e478459-9670-41cb-ae4d-f8f5dae57993.png)
 ![MainUI_003](https://user-images.githubusercontent.com/57577242/227277983-961c627e-0021-4ca4-889e-281bbfb6c204.png)
 
-## First time Installation
+## About
+
+This was inspired by the following guides:  
+- [Scraping Onion Artwork](https://github.com/OnionUI/Onion/wiki/Scraping-artwork-for-games)  
+- [Retro Game Corps RG35XX starter guide](https://retrogamecorps.com/2023/01/03/anbernic-rg35xx-starter-guide/)  
+
+I updated the onion mix template to create a 333 x 480 which should look good on both the miyoo mini and also the miyoo mini+ and will not looked "stretched out" when you modify the image for garlic using magick mogrify
+
+## Instructions  
+
+### Set-up Skraper and Skrape with custom mix template
+
+- Download the Garlic-Onion-Mix folder from this project
+- Download and run [Skraper](https://www.skraper.net/)
+- You may want to run through the following guide to familiarize yourself with Skraper: [Retro Game Corps Skraper Guide](https://retrogamecorps.com/2021/04/02/quick-guide-skraper-for-retro-handheld-devices/)
+- Select "All Systems"
+- In the "Media" tab for Skraper set the Media type to "User Provided Mix"
+- Click the "page" icon next to media type and select the `Garlic-Onion-Mix.xml` file you downloaded from this repo
+- Set the "Output Folder to: `%ROMROOTFOLDER%\Imgs` and select "Cleanup output folder before generating new medias" checkbox
+- Leave "Resise Wdith to" "Resize height to" and "Keep image ratio" blank.
+- Your Skraper screen should look like this:  
+
+![skraper](https://user-images.githubusercontent.com/57577242/227281809-60ac13e7-b88b-437e-bccc-b221e584bb76.png)
+
+- Skrape all of your systems
+- Delete any gamelist.xml files that the skraper created
+- If you are using Onion you are done!
+
+### Additional Garlic Steps
+
+- On your SD1 card, navigate to CFW > skin > settings.json
+- Edit settings.json to use the following:  
+`"text-alignment": "left",`    
+`"text-margin": 352,      `   
+- Download and install [ImageMagick](https://imagemagick.org/script/download.php)
+- Navigate to each Imgs folder and then hold SHIFT and right-click in that folder
+- Select “Open PowerShell window here”. A command line will open up (for mac you can use terminal)
+- type the following into the command line:  
+
+`magick mogrify -resize 340x480 -extent 640x480 -gravity West -background none *`
