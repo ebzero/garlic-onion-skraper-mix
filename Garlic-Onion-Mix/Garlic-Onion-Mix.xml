@@ -1,0 +1,38 @@
+﻿<ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Information ShortName="Garlic Onion Mix" LongName="Garlic Onion Mix" Description="Full Height Mix for Garlic or Onion" Author="EbZero"/>
+	<Viewport Color="#00000000" Width="333" Height="480"/>
+	<Drawings>
+		<Item Type="Screenshot">
+			<Display X="50%" Y="100%" Width="1000%" Height="100%" Antialiasing="Medium" Anchor="BottomHCenter" Transparency="0.0"/>
+			<Fallback Type="ScreenshotTitle">
+				<Fallback Type="SystemWallPaper">
+					<Children Reference="Parent">
+						<Item Type="Text" Text="No Screenshot!" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic"/>
+					</Children>
+				</Fallback>
+			</Fallback>
+		</Item>
+		<Item Type="Wheel">
+			<Display X="50%" Y="2%" Width="95%" Height="25%" Anchor="TopHCenter" Transparency="100"/>
+			<Children Reference="Parent">
+				<Item Type="LocalFile" LocalFilePath="BlackGradientShadow.png">
+					<Display X="50%" Y="105%" Width="400" Height="480" KeepRatio="false" Anchor="VCenterHCenter" Antialiasing="None" Transparency="0"/>
+				</Item>
+			</Children>
+		</Item>
+		<Item Type="Wheel" TestOnly="true">
+			<Display X="50%" Y="2%" Width="95%" Height="25%" Anchor="TopHCenter" Transparency="100"/>
+			<Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF" FontFile="OpenSans_SemiCondensed-ExtraBoldItalic.ttf" TextAlign="VCenterHCenter" Transparency="100">
+				<Children Reference="Parent">
+					<Item Type="LocalFile" LocalFilePath="BlackGradientShadow.png">
+						<Display X="50%" Y="105%" Width="400" Height="480" KeepRatio="false" Anchor="VCenterHCenter" Antialiasing="None" Transparency="0"/>
+					</Item>
+				</Children>
+			</Fallback>
+		</Item>
+		<Item Type="Wheel">
+			<Display X="50%" Y="2%" Width="95%" Height="25%" Anchor="TopHCenter"/>
+			<Fallback Type="Text" Text="%name%" TextColor="#FFFFFFFF" FontFile="OpenSans_SemiCondensed-ExtraBoldItalic.ttf" TextAlign="VCenterHCenter"/>
+		</Item>
+	</Drawings>
+</ImageComposition>
