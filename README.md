@@ -46,8 +46,18 @@ I updated the onion mix template to create a 333 x 480 which should look good on
 `"text-alignment": "left",`    
 `"text-margin": 352,      `   
 - Download and install [ImageMagick](https://imagemagick.org/script/download.php)
+- Follow one of the options below:
+
+#### Modify individual Imgs folders
 - Navigate to each Imgs folder and then hold SHIFT and right-click in that folder
 - Select “Open PowerShell window here”. A command line will open up (for mac you can use terminal)
 - type the following into the command line:  
 
 `magick mogrify -resize 340x480 -extent 640x480 -gravity West -background none *`
+
+#### Bulk Modify ALL Imgs Folders (Windows Only)
+- Navigate to the Roms folder and then hold SHIFT and ricght-click in that folder
+- Select "Open PowerShell window here".  A command line will open up
+- type the following into the command line:
+
+`Get-ChildItem -recurse | where {$_.name -eq "Imgs"} | foreach {cd -LiteralPath $_.FullName; magick mogrify -resize 340x480 -extent 640x480 -gravity West -background none *;}`
