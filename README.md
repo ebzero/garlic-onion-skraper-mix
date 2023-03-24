@@ -30,7 +30,7 @@ I updated the onion mix template to create a 333 x 480 which should look good on
 - In the "Media" tab for Skraper set the Media type to "User Provided Mix"
 - Click the "page" icon next to media type and select the `Garlic-Onion-Mix.xml` file you downloaded from this repo
 - Set the "Output Folder to: `%ROMROOTFOLDER%\Imgs` and select "Cleanup output folder before generating new medias" checkbox
-- Leave "Resise Wdith to" "Resize height to" and "Keep image ratio" blank.
+- Leave "Resise Width to" "Resize height to" and "Keep image ratio" blank.
 - Your Skraper screen should look like this:  
 
 ![skraper](https://user-images.githubusercontent.com/57577242/227281809-60ac13e7-b88b-437e-bccc-b221e584bb76.png)
