@@ -17,7 +17,7 @@ This was inspired by the following guides:
 - [Scraping Onion Artwork](https://github.com/OnionUI/Onion/wiki/Scraping-artwork-for-games)  
 - [Retro Game Corps RG35XX starter guide](https://retrogamecorps.com/2023/01/03/anbernic-rg35xx-starter-guide/)  
 
-I updated the onion mix template to create a 333 x 480 which should look good on both the miyoo mini and also the miyoo mini+ and will not looked "stretched out" when you modify the image for garlic using magick mogrify
+I loved this template created by AchillesPDXI so I updated it to create a 333 x 480 version which should look good on the miyoo mini as well as the MM+ and RG35XX which have a slightly larger screen.
 
 ## Instructions  
 
