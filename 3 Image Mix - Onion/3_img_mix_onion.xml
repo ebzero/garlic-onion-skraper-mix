@@ -1,0 +1,23 @@
+<ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Information ShortName="3 Image Mix (Onion)" LongName="3 Image Mix (Onion)" Description="2DBox + Screenshot + Wheel" Author="EbZero" />
+  <Viewport Color="#00FFFFFF" Width="320" Height="480" />
+  <Drawings>
+    <Item Type="Screenshot">
+      <Display X="50%" Y="64%" Antialiasing="None" Width="90%" Height="45%" Anchor="BottomHCenter" />
+      <Fallback Type="ScreenshotTitle">
+        <Fallback Type="SystemWallPaper">
+          <Children Reference="Parent">
+            <Item Type="Text" Text="No Screenshot!" TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic" />
+          </Children>
+        </Fallback>
+      </Fallback>
+    </Item>
+    <Item Type="Box2DFront">
+      <Display X="100%" Y="56%" Antialiasing="None" Transparency="0.9" Width="44%" Height="32%" Anchor="TopRight" />
+    </Item>
+    <Item Type="Wheel">
+      <Display X="0%" Y="12%" Width="54%" Height="30%" Anchor="TopLeft" Antialiasing="Medium" IfSystem="IsNotInTheList:2"/>
+      <Fallback Type="Text" Text="%name%"  TextColor="#FFFFFFFF" FontFamilly="Arial" FontStyle="Bold Italic" IfSystem="IsNotInTheList:2"/>
+    </Item>
+  </Drawings>
+</ImageComposition>
