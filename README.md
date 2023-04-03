@@ -2,7 +2,11 @@
 
 Create great box art for [Garlic](https://www.patreon.com/posts/76561333) or [Onion](https://github.com/OnionUI/Onion)
 
+**choose your style:**
+* [Full Height Mix](#full-height-mix)
+* [3-Images Mix](#3-images-mix)
 
+# Full Height Mix
 
 ![GarlicOS_001](https://user-images.githubusercontent.com/57577242/227276625-7772e477-e1f7-4656-9a29-2725ced99c00.png)
 ![GarlicOS_002](https://user-images.githubusercontent.com/57577242/227276635-a965ad3d-6b5f-4edd-8836-38a72345c6d2.png)
@@ -61,3 +65,30 @@ I loved this template created by AchillesPDXI so I updated it to create a 333 x 
 - type the following into the command line:
 
 `Get-ChildItem -recurse | where {$_.name -eq "Imgs"} | foreach {cd -LiteralPath $_.FullName; magick mogrify -monitor -resize 340x480 -extent 640x480 -gravity West -background none *;}`
+
+# 3-Images Mix
+
+![GarlicOS_3img-000](https://user-images.githubusercontent.com/57577242/229637443-5cd16761-374c-41f4-921c-ba3380a80664.png)
+![GarlicOS_3img-001](https://user-images.githubusercontent.com/57577242/229637455-d408f25b-138c-4440-81e3-2a312f93b80c.png)
+![GarlicOS_3img-002](https://user-images.githubusercontent.com/57577242/229637482-b940eca7-7144-4b61-bed2-9bbc65ce7b08.png)
+![MainUI_3img-002](https://user-images.githubusercontent.com/57577242/229637505-99084c5c-79c7-4f1c-a671-bce569a5547c.png)
+![MainUI_3img-001](https://user-images.githubusercontent.com/57577242/229637517-c5826b4f-121d-40bd-8aaa-3ba24dc61251.png)
+![MainUI_3img-000](https://user-images.githubusercontent.com/57577242/229637530-891f00db-da25-4368-90d5-020d0510cd3b.png)
+
+## Instructions  
+### Set-up Skraper and Skrape with custom mix template
+
+- Download the 3 Image Mix - Onion or 3 Image Mix - Garlic folders from this project
+- Download and run [Skraper](https://www.skraper.net/)
+- You may want to run through the following guide to familiarize yourself with Skraper: [Retro Game Corps Skraper Guide](https://retrogamecorps.com/2021/04/02/quick-guide-skraper-for-retro-handheld-devices/)
+- Select "All Systems"
+- In the "Media" tab for Skraper set the Media type to "User Provided Mix"
+- Click the "page" icon next to media type and select the `3_img_mix_onion.xml.xml` or `3_img_mix_garlic.xml.xml` file you downloaded from this repo
+- Set the "Output Folder to: `%ROMROOTFOLDER%\Imgs` and select "Cleanup output folder before generating new medias" checkbox
+- Leave "Resise Width to" "Resize height to" and "Keep image ratio" blank.
+- Your Skraper screen should look like this:  
+
+![skraper](https://user-images.githubusercontent.com/57577242/227281809-60ac13e7-b88b-437e-bccc-b221e584bb76.png)
+
+- Skrape all of your systems
+- Delete any gamelist.xml files that the skraper created
