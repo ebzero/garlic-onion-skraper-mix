@@ -92,3 +92,10 @@ I loved this template created by AchillesPDXI so I updated it to create a 333 x 
 
 - Skrape all of your systems
 - Delete any gamelist.xml files that the skraper created
+
+### Additional Garlic Steps
+
+- On your SD1 card, navigate to CFW > skin > settings.json
+- Edit settings.json to use the following:  
+`"text-alignment": "left",`    
+`"text-margin": 300,      `   
