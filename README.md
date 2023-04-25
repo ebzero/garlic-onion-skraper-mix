@@ -5,6 +5,7 @@ Create great box art for [Garlic](https://www.patreon.com/posts/76561333) or [On
 **choose your style:**
 * [Full Height Mix](#full-height-mix)
 * [3-Images Mix](#3-images-mix)
+* [Full Screen Mix (Garlic Only)](#full-screen-mix)
 
 # Full Height Mix
 
@@ -99,3 +100,13 @@ I loved this template created by AchillesPDXI so I updated it to create a 333 x 
 - Edit settings.json to use the following:  
 `"text-alignment": "left",`    
 `"text-margin": 300,      `   
+
+# Full Screen Mix
+
+![GarlicOS_001](https://raw.githubusercontent.com/timault/Garlic-Os-Skraper-/main/Screenshots/GarlicOS_001.png)
+![GarlicOS_002](https://raw.githubusercontent.com/timault/Garlic-Os-Skraper-/main/Screenshots/GarlicOS_003.png)
+![GarlicOS_003](https://raw.githubusercontent.com/timault/Garlic-Os-Skraper-/main/Screenshots/GarlicOS_008.png)
+
+## Instructions  
+
+Check out [this](https://github.com/timault/Garlic-Os-Skraper-) github project by timault to get these awesome preview images (Garlic Only)
